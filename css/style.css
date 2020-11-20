@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif ; 
+    min-width: 320px;
+}
+
+.main-header {
+    text-align: center;
+    height: 130px;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.main-header .logo {
+    width: 120px;
+    height: 100px;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+
+.main-header .action {
+    display: inline-block;
+    color: #CF29EE;
+    text-decoration: none;
+    margin: 0px 10px 8px 10px;
+}
+
+.search {
+    background-color: #CF29EE;
+    width: 100vw;
+    height: 150px;
+}
+
+
+
+@media (min-width: 800px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .main-header .menu {
+        align-self: flex-end;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+    }
+
+}
