@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Madrinha List";
+}
+
+<h2>Madrinha List</h2>
+
+<table id="madrinhaTable" class="display">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Conhecimentos</th>
+            <th>Localizacao</th>
+            <th>Horario</th>
+            <th>Interesses</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Nome</th>
+            <th>Conhecimentos</th>
+            <th>Localizacao</th>
+            <th>Horario</th>
+            <th>Interesses</th>
+        </tr>
+    </tfoot>
+</table>
+<link href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+@section scripts {
+
+    <script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#madrinhaTable').DataTable(
+                {
+                    "ajax": {
+                        "url": "/Madrinha/GetList",
+                        "type": "GET",
+                        "datatype": "json"
+                    },
+                    "columns": [
+                        { "data": "Nome" },
+                        { "data": "Conhecimentos" },
+                        { "data": "Localizacao" },
+                        { "data": "Horario" },
+                        { "data": "Interesses" },
+                    ]
+                });
+        });
+
+    </script>
+
+}
+
