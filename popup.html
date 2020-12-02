@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Div flutuante centro da tela.</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #posiciona {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 50em;
+            height: 250px;
+            margin-left: -150px;
+            margin-top: -125px;
+            background-color: #FFF;
+            color: #FFF;
+            background-color: #5d0772;
+            text-align: center;
+            z-index: 1000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            border-radius: 1em;
+        }
+        
+        #botao-chat {
+            margin: 15px;
+        }
+        
+        #botao-concluir {
+            margin: 15px;
+        }
+        
+        .estilo-botao {
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 10px;
+            color: #fff;
+            padding: 4px 7px;
+            border: 1px solid #8B008B;
+            background-color: #8B008B;
+            cursor: pointer;
+        }
+        
+        .estilo-botao:hover {
+            color: #CF29EE;
+            background-color: white;
+            text-decoration: underline;
+            box-shadow: 2px 2px 0 1px #ac03ca;
+        }
+        
+        .msg {
+            height: 4em;
+            font-size: medium;
+            border-radius: 1em;
+        }
+    </style>
+
+    <script>
+        function fechar() {
+            document.getElementById("posiciona").style.display = 'none';
+        }
+
+        function chat() {
+            document.getElementById("posiciona").style.display = 'none';
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <div id="posiciona">
+        <h3>Fulana aceitou ser sua madrinha! O chat já está disponível. Entre em contato para compartilhar os detalhes da mentoria.</h3>
+        <input class="msg" type="text" name="Mensagem" size="60" value="Olá, tenho interesse em ter você como madrinha!">
+        <hr size=1>
+
+        <div>
+            <a id="botao-chat" align=right href="javascript:chat();">
+                <button class="estilo-botao">Chat</button>
+            </a>
+
+            <a id="botao-concluir" align=left href="javascript:fechar();">
+                <button class="estilo-botao">Concluir</button>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
