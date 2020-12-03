@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Teste4.Models;
 
+
 namespace Teste4.Controllers
 {
     public class MadrinhaController : Controller
@@ -14,13 +15,15 @@ namespace Teste4.Controllers
         {
             return View();
         }
+       
         public ActionResult GetList()
         {
+            List<Madrinha> mdrList = new List<Madrinha>();
             using (DBModels db = new DBModels()) 
             {
-                var mdrList = db.Madrinha.ToList<Madrinha>();
-                return Json(new { data = mdrList }, JsonRequestBehavior.AllowGet);
+                mdrList = db.Madrinha.ToList<Madrinha>();
+                return Json(new { data = mdrList },JsonRequestBehavior.AllowGet);
             }
-        }
+        } 
     }
 }
