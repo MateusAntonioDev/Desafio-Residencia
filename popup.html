@@ -1,28 +1,24 @@
 <html>
 
 <head>
-    <title>Div flutuante centro da tela.</title>
+    <title>pop-up tela</title>
     <style type="text/css">
-        body {
-            display: flex;
-            justify-content: center;
-        }
-        
         #posiciona {
             position: absolute;
             left: 50%;
             top: 50%;
-            width: 50em;
-            height: 250px;
-            margin-left: -150px;
-            margin-top: -125px;
+            width: 370px;
+            height: 320px;
+            margin-left: -220px;
+            margin-top: -170px;
             background-color: #FFF;
             color: #FFF;
             background-color: #5d0772;
             text-align: center;
             z-index: 1000;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 15px;
+            font-family: Verdana;
+            font-size: 14px;
+            border: 1px solid #C71585;
             border-radius: 1em;
         }
         
@@ -38,24 +34,29 @@
             border-radius: 5px;
             text-decoration: none;
             margin-left: 10px;
+            margin-top: 15px;
             color: #fff;
             padding: 4px 7px;
-            border: 1px solid #8B008B;
-            background-color: #8B008B;
-            cursor: pointer;
+            border: 1px solid #a818ce;
+            background-color: #C71585;
+            font-family: Verdana;
         }
         
         .estilo-botao:hover {
-            color: #CF29EE;
-            background-color: white;
-            text-decoration: underline;
-            box-shadow: 2px 2px 0 1px #ac03ca;
+            background-color: #FF1493;
         }
         
-        .msg {
-            height: 4em;
-            font-size: medium;
-            border-radius: 1em;
+        .foto-popup {
+            border-radius: 60px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            border: 1px solid #ffffff;
+        }
+        
+        p {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 20px;
         }
     </style>
 
@@ -74,17 +75,19 @@
 <body>
 
     <div id="posiciona">
-        <h3>Fulana aceitou ser sua madrinha! O chat já está disponível. Entre em contato para compartilhar os detalhes da mentoria.</h3>
-        <input class="msg" type="text" name="Mensagem" size="60" value="Olá, tenho interesse em ter você como madrinha!">
+        <img src=img/Dindas-Cecilia.jpeg alt="foto da madrinha" width=100 height=100 class="foto-popup">
+        <p>Cecília Oliveira aceitou ser sua madrinha!</p>
+        <p>O chat já está disponível. Entre em contato para compartilhar os detalhes da mentoria.</p>
+
         <hr size=1>
 
         <div>
             <a id="botao-chat" align=right href="javascript:chat();">
-                <button class="estilo-botao">Chat</button>
+                <button class="estilo-botao">Enviar</button>
             </a>
 
             <a id="botao-concluir" align=left href="javascript:fechar();">
-                <button class="estilo-botao">Concluir</button>
+                <button class="estilo-botao">Cancelar</button>
             </a>
 
         </div>
