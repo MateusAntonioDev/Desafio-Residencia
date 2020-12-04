@@ -138,7 +138,7 @@ label {
 }
 
 .linha {
-    background-color: #5d0772;
+    background-color: #8B008B;
 }
 
 .name_afilhada {
@@ -149,6 +149,7 @@ label {
 
 .caixa {
     color: #5d0772;
+    margin-bottom: 20px;
 }
 
 .checked {
@@ -170,9 +171,12 @@ textarea {
     height: 80px;
     border: 0px;
     background-color: #ffc7fe;
-    padding: ;
 }
 
 p {
     padding-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
 }
