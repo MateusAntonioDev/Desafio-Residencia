@@ -102,7 +102,7 @@ label {
 #userimage {
     height: 133px;
     width: 133px;
-    margin: auto;
+    margin-right: 10px;
     border-radius: 50%;
     float: left;
 }
@@ -145,6 +145,7 @@ label {
     text-align: left;
     font-size: 25px;
     color: #CF29EE;
+    margin-top: 17px;
 }
 
 .caixa {
