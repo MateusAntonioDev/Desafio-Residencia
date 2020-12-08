@@ -54,6 +54,10 @@ body {
     margin-bottom: 2em;
 }
 
+.search .input-box {
+    padding-top: 30px;
+}
+
 .search .search-for {
     display: flex;
     justify-content: center;
