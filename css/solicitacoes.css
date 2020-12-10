@@ -30,7 +30,7 @@ body {
 
 .menu .action {
     display: inline-block;
-    color: #CF29EE;
+    color: #5d0772;
     text-decoration: none;
     margin: 35px 10px 8px 10px;
     padding: 5px 5px;
@@ -65,10 +65,7 @@ body {
 }
 
 .ac_box_cont {
-    border-left: 4px solid #8B008B;
-    border-right: 4px solid #8B008B;
-    border-bottom: 4px solid #8B008B;
-    border-top: 4px solid #8B008B;
+    border: 4px solid #8B008B;
     height: 9em;
     width: 900px;
     padding: 5px 1em;
@@ -81,6 +78,9 @@ body {
     margin-bottom: 15px;
     padding-top: 15px;
     text-shadow: 0px 0px 1px 0px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 label {
@@ -110,7 +110,7 @@ label {
 .btn_rec {
     text-align: center;
     border-radius: 1em;
-    background-color: red;
+    background-color: #808080;
     cursor: pointer;
     color: white;
 }
@@ -125,7 +125,7 @@ label {
 .btn_act {
     float: center;
     border-radius: 1em;
-    background-color: green;
+    background-color: #8B008B;
     cursor: pointer;
     color: white;
 }
@@ -144,8 +144,24 @@ label {
 .name_afilhada {
     text-align: left;
     font-size: 25px;
-    color: #CF29EE;
+    color: #5d0772;
     margin-top: 17px;
+}
+
+.sent-msg {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    background-color: rgba(139, 0, 139, 0.700);
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+}
+
+.sent-msg p {
+    margin: 40px 10px;
+    vertical-align: middle;
+    font-weight: 400;
 }
 
 .caixa {
@@ -154,7 +170,7 @@ label {
 }
 
 .checked {
-    color: #A020F0;
+    color: #ffd700;
     float: left;
 }
 
@@ -180,4 +196,5 @@ p {
 
 .btn {
     padding: 10px 20px;
+    border: 0;
 }

@@ -30,7 +30,7 @@ body {
 
 .menu .action {
     display: inline-block;
-    color: #CF29EE;
+    color: #5d0772;
     text-decoration: none;
     margin: 35px 10px 8px 10px;
     padding: 5px 5px;
@@ -212,6 +212,7 @@ label {
     cursor: pointer;
     color: white;
     padding: 10px 20px;
+    border: 0;
 }
 
 .btn:hover {
@@ -290,12 +291,11 @@ label {
 select {
     color: white;
     background-color: #5d0772;
-    text-decoration: underline;
     border: 0px;
 }
 
 h3 {
-    color: #CF29EE;
+    color: #5d0772;
 }
 
 h4 {
@@ -303,14 +303,14 @@ h4 {
 }
 
 h2 {
-    color: #CF29EE;
+    color: #5d0772;
     font-size: 30px;
     margin-bottom: 5px;
     margin-top: 10px;
 }
 
 .checked {
-    color: #A020F0;
+    color: #ffd700;
     float: left;
 }
 
@@ -334,6 +334,13 @@ h2 {
 .disponible {
     margin-bottom: 50px;
 }
+
+.alinhar-esquerda {
+    text-align: justify;
+    padding-left: 150px;
+    padding-right: 215px;
+}
+
 
 
 
