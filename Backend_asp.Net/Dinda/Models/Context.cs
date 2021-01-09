@@ -12,7 +12,7 @@ namespace Dinda.Models
         public DbSet<Afilhada> Afilhadas { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString:@"Server=(localdb)\ProjectsV13;Database=Dinda;Integrated Security=True");
+            optionsBuilder.UseSqlServer(connectionString:@"Server=(localdb)\mssqllocaldb;Database=Dinda;Integrated Security=True");
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mateu\\Desktop\\workspace\\Dinda\\Dinda\\Dinda.csproj": {}
+    "C:\\Users\\mateu\\Desktop\\workspace\\Desafio-Residencia\\Backend_asp.Net\\Dinda\\Dinda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mateu\\Desktop\\workspace\\Dinda\\Dinda\\Dinda.csproj": {
+    "C:\\Users\\mateu\\Desktop\\workspace\\Desafio-Residencia\\Backend_asp.Net\\Dinda\\Dinda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateu\\Desktop\\workspace\\Dinda\\Dinda\\Dinda.csproj",
+        "projectUniqueName": "C:\\Users\\mateu\\Desktop\\workspace\\Desafio-Residencia\\Backend_asp.Net\\Dinda\\Dinda.csproj",
         "projectName": "Dinda",
-        "projectPath": "C:\\Users\\mateu\\Desktop\\workspace\\Dinda\\Dinda\\Dinda.csproj",
+        "projectPath": "C:\\Users\\mateu\\Desktop\\workspace\\Desafio-Residencia\\Backend_asp.Net\\Dinda\\Dinda.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mateu\\Desktop\\workspace\\Dinda\\Dinda\\obj\\",
+        "outputPath": "C:\\Users\\mateu\\Desktop\\workspace\\Desafio-Residencia\\Backend_asp.Net\\Dinda\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
